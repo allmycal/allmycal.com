@@ -1,3 +1,5 @@
+// allmycall.com custom
+import { Analytics } from "@vercel/analytics/react";
 import { DefaultSeo } from "next-seo";
 import Head from "next/head";
 import Script from "next/script";
@@ -54,6 +56,7 @@ function MyApp(props: AppProps) {
         ),
         router
       )}
+      <Analytics />
     </AppProviders>
   );
 }
